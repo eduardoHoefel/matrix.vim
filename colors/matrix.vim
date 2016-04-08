@@ -10,7 +10,6 @@ if exists("syntax_on")
   syntax reset
 endif
 let g:colors_name = "matrix"
-
 "colors:
 "	Black	16
 "	Red		196
@@ -22,7 +21,6 @@ let g:colors_name = "matrix"
 "	White	231
 "	Gray95	59
 "
-
 highlight clear
 
 "Basic text
@@ -78,7 +76,7 @@ highlight Error				ctermfg=16	ctermbg=196	cterm=none
 highlight Todo				ctermfg=51	ctermbg=16	cterm=none
 
 "Vi-related
-highlight Cursor			ctermfg=231	ctermbg=231	cterm=none
+highlight Cursor			ctermfg=231	ctermbg=59	cterm=none
 highlight SpecialKey		ctermfg=201				cterm=none
 highlight ErrorMsg			ctermfg=231	ctermbg=196	cterm=none
 highlight Directory  		ctermfg=21				cterm=bold
@@ -86,10 +84,14 @@ highlight Search			ctermfg=16	ctermbg=51	cterm=none
 highlight Visual			ctermbg=59				cterm=none
 highlight WildMenu			ctermfg=231				cterm=none
 
+"Pmenu
+highlight Pmenu				ctermfg=16	ctermbg=46	cterm=bold
+highlight PmenuSel			ctermfg=16	ctermbg=21	cterm=bold
+
 " Links:
 
 highlight link TermCursor Cursor	
 highlight link CursorIM Cursor
 highlight link CursorColumn Cursor
-highlight link CursorLine Cursor
+"highlight link CursorLine Cursor
 highlight link lCursor ursor
